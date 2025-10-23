@@ -14,7 +14,7 @@ class Game:
         pygame.display.set_caption('Grims Adventure')
         info = pygame.display.Info()
         self.native_size = (info.current_w, info.current_h)
-        self.screen = pygame.display.set_mode(self.native_size, pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode(self.native_size, pygame.NOFRAME)
         self.display = pygame.Surface((320, 240), pygame.SRCALPHA)
         self.display_2 = pygame.Surface((320, 240), pygame.SRCALPHA)
         self.clock = pygame.time.Clock()
